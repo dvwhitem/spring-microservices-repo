@@ -2,7 +2,6 @@ spring:
   application:
     name: search-service
 
-spring:
   rabbitmq:
     host: localhost
     port: 5672
