@@ -4,6 +4,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+  datasource:
+    url: jdbc:mysql://localhost:3306/brownfield
+    username: user
+    password: 12345
 
 originairports:
   shutdown: SEA
