@@ -15,6 +15,11 @@ spring:
 originairports:
   shutdown: SEA
 
+
+management:
+  security:
+    enabled: false
+
 eureka:
   client:
     serviceUrl:
