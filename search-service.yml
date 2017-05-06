@@ -5,9 +5,9 @@ spring:
     username: guest
     password: guest
   datasource:
-    url: jdbc:mysql://localhost:3306/brownfield
-    username: user
-    password: 12345
+    url: ${MYSQL_C5_URL}
+    username: ${MYSQL_C5_USER}
+    password: ${MYSQL_C5_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
