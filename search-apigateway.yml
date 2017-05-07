@@ -1,6 +1,6 @@
 zuul:
   routes:
-    search-apigateway: /greet
+    search-apigateway: /greet/**
     search-service: /api/**
 
 eureka:
