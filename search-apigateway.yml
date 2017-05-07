@@ -1,9 +1,7 @@
 zuul:
   routes:
-    search-apigateway:
-      serviceId:
-        search-service
-      path: /api/**
+    search-apigateway: /greet
+    search-service: /api/**git
 
 eureka:
   client:
