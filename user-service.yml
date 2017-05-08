@@ -1,3 +1,12 @@
+security:
+  oauth2:
+    client:
+      clientId: user-service
+      clientSecret: secret
+      accessTokenUri: http://auth-server:9000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: read
+
 eureka:
   client:
     serviceUrl:
