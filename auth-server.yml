@@ -1,6 +1,5 @@
-spring:
-  server:
-    context-path: /uaa
+server:
+  context-path: /uaa
 
 security:
   user:
