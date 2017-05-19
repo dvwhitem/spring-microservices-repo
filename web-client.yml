@@ -1,7 +1,6 @@
 security:
   basic:
     enabled: false
-security:
   user:
     password: 12345
 
