@@ -13,11 +13,8 @@ security:
     enabled: false
 security:
   user:
-    password:
-      12345
-management:
-  security:
-    enabled: false
+  password:
+    12345
 
 eureka:
   client:
