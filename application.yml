@@ -1,8 +1,13 @@
-  spring:
-    datasource:
-      url: ${MYSQL_C5_URL}
-      username: ${MYSQL_C5_USER}
-      password: ${MYSQL_C5_PASSWORD}
-    jpa:
-      hibernate:
-        ddl-auto: update
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/me
+
+spring:
+  datasource:
+    url: ${MYSQL_C5_URL}
+    username: ${MYSQL_C5_USER}
+    password: ${MYSQL_C5_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update

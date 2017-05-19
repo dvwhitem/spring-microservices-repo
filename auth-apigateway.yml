@@ -4,10 +4,6 @@ zuul:
       serviceId:
         auth-server
       path: /uaa/**
-security:
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:9000/uaa/me
 
 eureka:
   client:
