@@ -4,7 +4,6 @@ security:
       loginPath: /login
     resource:
       userInfoUri: http://localhost:9000/uaa/me
-
 spring:
   datasource:
     url: ${MYSQL_C5_URL}
@@ -13,3 +12,4 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
