@@ -1,8 +1,22 @@
+zuul:
+  ignored-services: '*'
+  routes:
+    auth-apigateway:
+      path: /api/**
+      url: http://localhost:9999
+    auth-server:
+      path: /user/**
+      url: http://localhost:9000/uaa/user
 security:
-  basic:
-    enabled: false
-  user:
-    password: 12345
+  enable-csrf: false
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
+    client:
+      accessTokenUri: http://localhost:9000/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9000/uaa/oauth/authorize
+      clientId: website
+      clientSecret: secret
 
 eureka:
   client:

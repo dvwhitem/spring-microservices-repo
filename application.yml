@@ -1,9 +1,3 @@
-security:
-  oauth2:
-    sso:
-      loginPath: /login
-    resource:
-      userInfoUri: http://localhost:9000/uaa/me
 spring:
   datasource:
     url: ${MYSQL_C5_URL}
