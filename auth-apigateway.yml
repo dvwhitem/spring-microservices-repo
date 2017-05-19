@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    auth-apigateway:
+      serviceId:
+        auth-server
+      path: /uaa/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
