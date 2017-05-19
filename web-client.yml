@@ -1,9 +1,9 @@
 security:
   basic:
     enabled: false
-management:
-  security:
-    enabled: false
+security:
+  user:
+    password: 12345
 
 eureka:
   client:
