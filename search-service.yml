@@ -8,13 +8,9 @@ spring:
 originairports:
   shutdown: SEA
 
-security:
-  basic:
+management:
+  security:
     enabled: false
-security:
-  user:
-  password:
-    12345
 
 eureka:
   client:
