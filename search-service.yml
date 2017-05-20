@@ -5,12 +5,19 @@ spring:
     username: guest
     password: guest
 
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      clientId: search-service
+      clientSecret: secret
+      accessTokenUri: http://localhost:9000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
 originairports:
   shutdown: SEA
-
-management:
-  security:
-    enabled: false
 
 eureka:
   client:
