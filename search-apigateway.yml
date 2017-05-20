@@ -8,7 +8,7 @@ security:
   user:
     password: password
   enable-csrf: false
-  oauth2:git
+  oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
 
