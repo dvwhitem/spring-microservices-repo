@@ -8,6 +8,8 @@ zuul:
       path: /user/**
       url: http://localhost:9000/uaa/user
 security:
+  user:
+    password: password
   enable-csrf: false
   oauth2:
     resource:
