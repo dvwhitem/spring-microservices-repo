@@ -11,12 +11,6 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
-    client:
-      clientId: search-service
-      clientSecret: secret
-      accessTokenUri: http://localhost:9000/uaa/oauth/token
-      grant-type: client_credentials
-      scope: server
 
 originairports:
   shutdown: SEA
