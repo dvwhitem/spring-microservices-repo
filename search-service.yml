@@ -9,6 +9,8 @@ security:
   user:
     password: password
   oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
     client:
       clientId: search-service
       clientSecret: secret
