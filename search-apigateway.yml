@@ -5,7 +5,10 @@ zuul:
         search-service
       path: /api/**
 security:
-  oauth2:
+  user:
+    password: password
+  enable-csrf: false
+  oauth2:git
     resource:
       userInfoUri: http://localhost:9000/uaa/user
 
