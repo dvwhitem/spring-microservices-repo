@@ -1,8 +1,7 @@
 zuul:
   routes:
     search-apigateway:
-      serviceId:
-        search-service
+      serviceId: search-service
       path: /api/**
 security:
   user:
