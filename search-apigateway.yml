@@ -10,9 +10,6 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
-    client:
-      accessTokenUri: http://localhost:9000/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9000/uaa/oauth/authorize
 
 eureka:
   client:
