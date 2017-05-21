@@ -1,6 +1,4 @@
 zuul:
-  ignored-services: '*'
-  ignoredPatterns: /**/api/**
   routes:
     search-apigateway:
       serviceId: search-service
