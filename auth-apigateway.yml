@@ -1,8 +1,7 @@
 zuul:
   routes:
     auth-apigateway:
-      serviceId:
-        auth-server
+      serviceId: auth-server
       path: /uaa/**
 security:
   user:
