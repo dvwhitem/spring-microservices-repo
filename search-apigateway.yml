@@ -3,18 +3,13 @@ zuul:
     search-apigateway:
       serviceId: search-service
       path: /api/**
-#security:
-#  user:
-#    password: password
-#  enable-csrf: false
-#  oauth2:
-#    resource:
-#      userInfoUri: http://localhost:9000/uaa/user
-#    client:
-#      accessTokenUri: http://localhost:9000/uaa/oauth/token
-#      userAuthorizationUri: http://localhost:9000/uaa/oauth/authorize
-#      clientId: website
-#      clientSecret: secret
+security:
+  user:
+    password: password
+  enable-csrf: false
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
 
 eureka:
   client:
