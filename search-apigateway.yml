@@ -3,8 +3,6 @@ zuul:
     search-apigateway:
       serviceId: search-service
       path: /api/**
-      stripPrefix: false
-      sensitiveHeaders:
 
 security:
   user:
@@ -18,15 +16,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
-
-ribbon:
-  ConnectTimeout: 30000
-  ReadTimeout: 990000
-  maxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
-  eureka:
-    enabled: true
 
 logging:
   level:
