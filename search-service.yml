@@ -13,7 +13,7 @@ security:
       userInfoUri: http://localhost:9000/uaa/user
 
 originairports:
-  shutdown: SEA
+  shutdown: LAX
 
 eureka:
   client:
