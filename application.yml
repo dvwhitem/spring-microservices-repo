@@ -10,3 +10,5 @@ spring:
 search-service:
   ribbon:
     listOfServers: http://localhost:8090
+  eureka:
+    enabled: true
