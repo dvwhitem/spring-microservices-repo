@@ -4,6 +4,7 @@ zuul:
     search-apigateway:
       serviceId: search-service
       path: /api/**
+      stripPrefix: false
 
 security:
   user:
