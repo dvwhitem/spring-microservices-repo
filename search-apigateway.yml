@@ -1,5 +1,5 @@
 zuul:
-  ignoredServices: '*'
+  ignoredServices: "*"
   routes:
     search-apigateway:
       serviceId: search-service
