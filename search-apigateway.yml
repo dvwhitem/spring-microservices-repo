@@ -14,6 +14,10 @@ security:
       userInfoUri: http://localhost:9000/uaa/user
 
 
+ribbon:
+  eureka:
+    enabled: true
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
