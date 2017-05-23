@@ -1,8 +1,11 @@
 zuul:
+  ignoredServices: '*'
   routes:
     search-apigateway:
       serviceId: search-service
       path: /api/**
+      stripPrefix: false
+      sensitiveHeaders: Authorization
 
 security:
   user:
