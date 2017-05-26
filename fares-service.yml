@@ -1,4 +1,6 @@
 security:
+  user:
+    password: password
   oauth2:
     client:
       accessTokenUri: http://localhost:9000/uaa/oauth/token
