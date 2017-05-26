@@ -6,8 +6,8 @@ security:
       clientSecret: secret
       grant-type: client_credentials
       scope: server
-      resource:
-        userInfoUri: http://localhost:9000/uaa/user
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
 
 
 spring:
