@@ -4,13 +4,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-
-spring:
   cloud:
     stream:
       bindings:
@@ -18,3 +11,15 @@ spring:
           destination: inventoryQ
         checkInQ:
           destination: checkInQ
+
+security:
+  user:
+    password: password
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
