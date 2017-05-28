@@ -13,8 +13,8 @@ security:
       userInfoUri: http://localhost:9000/uaa/user
     client:
       checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
-      clientId: search-services
-      clientSecret: secrets
+      clientId: search-service
+      clientSecret: secret
 
 originairports:
   shutdown: SEA
