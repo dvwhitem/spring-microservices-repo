@@ -14,7 +14,7 @@ security:
     client:
       checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
       clientId: search-service
-      clientSecret: secret
+      clientSecret: secrets
 
 originairports:
   shutdown: SEA
