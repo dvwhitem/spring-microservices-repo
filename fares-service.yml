@@ -7,7 +7,7 @@ security:
     client:
       accessTokenUri: http://localhost:9000/uaa/oauth/token
       checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
-      clientId: fares-service
+      clientId: fares-services
       clientSecret: secret
       scope: server
 
