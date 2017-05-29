@@ -21,7 +21,7 @@ security:
     client:
       accessTokenUri: http://localhost:9000/uaa/oauth/token
       clientId: book-service
-      clientSecret: secret
+      clientSecret: secrets
       scope: server
 
 eureka:
