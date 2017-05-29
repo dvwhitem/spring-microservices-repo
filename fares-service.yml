@@ -2,14 +2,14 @@ security:
   user:
     password: password
   oauth2:
-    client:
-      accessTokenUri: http://localhost:9000/uaa/oauth/token
-      clientId: fares-service
-      clientSecret: secret
-      grant-type: client_credentials
-      scope: server
     resource:
       userInfoUri: http://localhost:9000/uaa/user
+    client:
+      accessTokenUri: http://localhost:9000/uaa/oauth/token
+      checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
+      clientId: fares-service
+      clientSecret: secret
+      scope: server
 
 
 spring:
