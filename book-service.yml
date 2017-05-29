@@ -20,9 +20,9 @@ security:
       userInfoUri: http://localhost:9000/uaa/user
     client:
       accessTokenUri: http://localhost:9000/uaa/oauth/token
-      clientId: book-services
-      clientSecret: secrets
-      scope: server
+      clientId: book-service
+      clientSecret: secret
+      scope: servers
 
 eureka:
   client:
