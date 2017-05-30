@@ -24,6 +24,10 @@ security:
       clientSecret: secret
       scope: server
 
+fares-proxy:
+  ribbon:
+    listOfServers: localhost:8080,localhost:8081
+
 eureka:
   client:
     serviceUrl:
