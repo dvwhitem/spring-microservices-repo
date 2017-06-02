@@ -1,6 +1,8 @@
-spring:
-  application:
-    name: fares-apigateway
+zuul:
+  routes:
+    fares-apigateway:
+      serviceId: fare-service
+      path: /api/**
 
 security:
   user:
@@ -8,12 +10,6 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
-
-zuul:
-  routes:
-    fares-apigateway:
-      serviceId: fare-service
-      path: /api/**
 
 eureka:
   client:
