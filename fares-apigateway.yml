@@ -1,8 +1,10 @@
 zuul:
   routes:
-    fares-apigateway:
-      serviceId: fares-service
-      path: /api/**
+    fares-service:
+        path: /api/**
+        serviceId: fares-service
+        stripPrefix: false
+        sensitiveHeaders:
 
 security:
   user:
