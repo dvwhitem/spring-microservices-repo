@@ -1,6 +1,6 @@
 zuul:
   routes:
-    fares-service:
+    fares-apigateway:
         path: /api/**
         serviceId: fares-service
         stripPrefix: false
