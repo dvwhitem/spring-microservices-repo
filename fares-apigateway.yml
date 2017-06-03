@@ -12,6 +12,12 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
+    client:
+      accessTokenUri: http://localhost:9000/uaa/oauth/token
+      checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
+      clientId: fares-service
+      clientSecret: secret
+      scope: server
 
 eureka:
   client:
