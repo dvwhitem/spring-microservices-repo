@@ -11,6 +11,7 @@ security:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
     client:
+      accessTokenUri: http://localhost:9000/uaa/oauth/token
       checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
       clientId: book-service
       clientSecret: secret
