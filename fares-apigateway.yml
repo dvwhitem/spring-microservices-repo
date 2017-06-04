@@ -12,7 +12,7 @@ security:
       userInfoUri: http://localhost:9000/uaa/user
     client:
       accessTokenUri: http://localhost:9000/uaa/oauth/token
-      clientId: fares-service
+      clientId: fares-apigateway
       clientSecret: secret
       scope: server
 
