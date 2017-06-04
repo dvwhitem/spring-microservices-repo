@@ -10,6 +10,10 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
+    client:
+      checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
+      clientId: book-service
+      clientSecret: secret
 
 eureka:
   client:
