@@ -1,0 +1,23 @@
+zuul:
+  routes:
+    book-apigateway:
+      serviceId: book-service
+      path: /api/**
+
+security:
+  user:
+    password: password
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
