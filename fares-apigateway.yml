@@ -10,11 +10,11 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9000/uaa/user
-    client:
-      accessTokenUri: http://localhost:9000/uaa/oauth/token
-      clientId: fares-apigateway
-      clientSecret: secret
-      scope: server
+#    client:
+#      accessTokenUri: http://localhost:9000/uaa/oauth/token
+#      clientId: fares-apigateway
+#      clientSecret: secret
+#      scope: server
 
 eureka:
   client:
