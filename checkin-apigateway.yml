@@ -4,6 +4,17 @@ zuul:
         path: /api/**
         serviceId: checkin-service
 
+security:
+  user:
+    password: password
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9000/uaa/user
+    client:
+      checkTokenEndpointUrl: http://localhost:9000/uaa/oauth/check_token
+      clientId: checkin-apigateway
+      clientSecret: secret
+
 eureka:
   client:
     serviceUrl:
