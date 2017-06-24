@@ -11,6 +11,9 @@ spring:
           destination: inventoryQ
         checkInQ:
           destination: checkInQ
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
 
 security:
   user:
