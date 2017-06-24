@@ -25,6 +25,10 @@ spring:
         checkInQ:
           destination: checkInQ
 
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
 eureka:
   client:
     serviceUrl:
